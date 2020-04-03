@@ -56,6 +56,8 @@ namespace CmsShoppingCart.Areas.Admin.Controllers
                 _context.Add(page);
                 await _context.SaveChangesAsync();
 
+                TempData["Success"] = "The page has been added!";
+
                 return RedirectToAction("Index");
             }
 
