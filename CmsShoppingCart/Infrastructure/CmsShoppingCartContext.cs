@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using CmsShoppingCart.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace CmsShoppingCart.Infrastructure
 {
@@ -8,5 +9,6 @@ namespace CmsShoppingCart.Infrastructure
             :base(options)
         {
         }
+        public DbSet<Page> Pages { get; set; }
     }
 }
