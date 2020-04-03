@@ -34,5 +34,8 @@ namespace CmsShoppingCart.Areas.Admin.Controllers
             return View(page);
         }
 
+        // GET /admin/pages/Create
+        public IActionResult Create() => View();
+
     }
 }
