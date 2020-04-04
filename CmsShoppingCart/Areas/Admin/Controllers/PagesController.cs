@@ -88,7 +88,6 @@ namespace CmsShoppingCart.Areas.Admin.Controllers
                     ModelState.AddModelError("", "The page already exists");
                     return View(page);
                 }
-                page.Slug = page.Title.ToLower().Replace(" ", "-");
                 page.Sorting = 100;
 
                 _context.Update(page);
